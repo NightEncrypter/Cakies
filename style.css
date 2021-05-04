@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	/* font-family: 'Satisfy', cursive; */
+	/* font-family: 'Patrick Hand', cursive; */
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 19px;
+	background: #fff;
+	color: #333;
+	line-height: 1.6;
+	letter-spacing: 1.5;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+	width: 12px;
+	background: black;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(#000, #fdd59a);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(black, white);
+	border-radius: 5px;
+}
+
+/* Base styles */
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+h1,
+h2 {
+	/* font-weight: bold; */
+	line-height: 1.2;
+}
+
+p {
+	margin: 10px 0;
+}
+
+img {
+	width: 100%;
+}
+
+/* Navbar */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	background: hsl(14, 38%, 16%);
+	/* background: #484c53; */
+	opacity: 0.8;
+	width: 100%;
+	/* height: vh; */
+	height: 12vh;
+	/* max-width: 1100px; */
+	/* if we will used max width then navbar div width will be extended till content whatever content will on navbar content here */
+	color: white;
+	position: fixed;
+	/* top: 0px; */
+	padding: 0 30px;
+	transition: 0.6s;
+}
+
+/* Nav transparent */
+.navbar.top {
+	background: transparent !important;
+}
+.navbar ul {
+	display: flex;
+	align-items: center;
+}
+
+.navbar a {
+	color: #fff;
+	padding: 10px 14px;
+	margin: 0 5px;
+}
+.navbar a:hover {
+	border-bottom: #fdca81 4px solid;
+
+	color: #fdca81;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.navbar h1 {
+	font-weight: 400;
+}
+
+/* Header */
+.hero {
+	background: url('./img/cake.jpg') no-repeat center center/cover;
+	/* for opacity effect */
+	position: relative;
+	color: #fff;
+	height: 100vh;
+}
+
+/* BLOG SECTION Hero */
+.hero.blog {
+	background: url('./pexels-valeriy-ryasnyanskiy-3840200.jpg') no-repeat center center/cover;
+	height: 40vh;
+	object-fit: stretch;
+}
+
+/* blog section H2 font color change */
+.column-2.bg-blog1 h2,
+.column-2.bg-blog2 h2,
+.column-2.bg-blog3 h2 {
+	color: black;
+}
+
+.hero .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+	color: white;
+	padding: 0 20px;
+}
+
+.hero .content h1 {
+	/* margin-top: 60px; */
+	font-size: 55px;
+
+	opacity: 0.4;
+	/* font-family: 'Great Vibes', cursive; */
+	font-family: 'Kaushan Script', cursive;
+}
+
+.hero .content p {
+	font-size: 23px;
+	max-width: 600px;
+	color: #f4f4f4;
+	margin: 20px 0 30px;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+/* applies in inside of div hero */
+.hero * {
+	z-index: 10;
+}
+
+/* Icons */
+
+.icons {
+	padding: 30px;
+}
+.icons h3 {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.icons i {
+	color: white;
+	padding: 1rem;
+	background: #301716;
+	/* border: 1px #382019 solid; */
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+.icons i:hover {
+	background: #f00c14;
+}
+
+/* Cases */
+.cases img {
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0.8;
+}
+
+.cases img:hover {
+	opacity: 1;
+}
+
+/* Teams */
+.team img {
+	border-radius: 50%;
+	/* max-width: 90px; */
+	width: 70%;
+	/* flex-basis: 100px; */
+}
+
+.callback-form {
+	width: 100%;
+	padding: 20px;
+}
+
+.callback-form label {
+	display: block;
+	margin-bottom: 5px;
+}
+.callback-form .form-control {
+	margin: 15px 0;
+}
+
+.callback-form input {
+	width: 100%;
+	padding: 4px;
+	border: none;
+	border-radius: 12px;
+	height: 30px;
+	/* border: #f7d9af 1px solid; */
+}
+
+.callback-form .btn {
+	padding: 10px 0;
+	margin-top: 10px;
+}
+.callback-form input:focus {
+	outline-color: green;
+	outline-style: 10px;
+}
+
+/* POSTS PAGE */
+.post {
+	padding: 50px 30px;
+}
+
+.post h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+	margin-bottom: 30px;
+}
+
+.post img {
+	margin: 0 auto;
+	display: block;
+	border-radius: 50%;
+	max-width: 350px;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 150px;
+}
+
+.footer a {
+	color: #fff;
+
+	/* text-align: center; */
+}
+
+.footer a:hover {
+	color: #f7c683;
+}
+.footer .social > * {
+	margin-right: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		height: 20vh;
+		align-items: center;
+		/* justify-content: center; */
+		padding: 20px 10px;
+	}
+
+	.navbar a {
+		padding: 12px 14px;
+		/* margin: 0 5px; */
+	}
+	.hero .content h1 {
+		margin-top: 20px;
+		font-size: 37px;
+	}
+	.hero .content p {
+		font-size: 17px;
+	}
+	.hero .content {
+		padding-top: 120px;
+	}
+	.hero .content .btn {
+		padding: 7px 5px;
+	}
+	.flex-items {
+		flex-direction: column;
+	}
+	.flex-items > div:nth-child(1),
+	.flex-items > div:nth-child(2) {
+		border-bottom: #484c53 1px dotted;
+	}
+
+	.flex-columns .column,
+	.flex-grid .column {
+		flex: 100% !important;
+		max-width: 100% !important;
+	}
+	.team img {
+		width: 40%;
+	}
+	.flex-grid .column img {
+		max-width: 250px;
+
+		margin: 15px;
+	}
+}
+
+/* POST & BLOCK PAGE FONT h1 */
+.hero .content h1.postfont {
+	font-size: 68px;
+	padding-bottom: 36px;
+}

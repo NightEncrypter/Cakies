@@ -1,0 +1,344 @@
+/* Text colors */
+
+.text-primary {
+	color: #fdca81;
+}
+
+.text-secondary {
+	color: bisque;
+}
+
+/* Button */
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	border: 1.5px white solid;
+
+	background-color: transparent;
+	overflow: auto;
+}
+
+.btn:hover {
+	border: none;
+	/* background: rgb(250, 4, 4); */
+	/* opacity: ; */
+	background: linear-gradient(45deg, black, #d5ab6f);
+	color: white;
+}
+/* .btn-showcase {
+	background-color: transparent;
+	color: white;
+
+	border: 1px white solid;
+}
+.btn-showcase:hover {
+	
+	border: none;
+	background-color: #382019;
+
+	color: white;
+} */
+
+.normal-btn {
+	background: grey;
+	/* border: 1px black solid; */
+	color: black;
+	/* padding: 2px 0; */
+}
+.normal-btn:hover {
+	/* border: none; */
+	/* background: #007acc; */
+	color: white;
+	background: linear-gradient(45deg, black, #007acc);
+}
+.btn-outline {
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 7px 6px;
+}
+.btn-outline:hover {
+	/* background: #fdca81; */
+	background: linear-gradient(45deg, black, #fdca81);
+	color: rgb(66, 61, 61);
+	border: none;
+}
+
+/* Blog section */
+
+.btn-blog1 {
+	background: transparent;
+	color: black;
+	border: black 1px solid;
+	padding: 4px 6px;
+}
+
+.btn-blog1:hover {
+	/* background: #695751; */
+	background: linear-gradient(45deg, black, #695751);
+	/* color: #000; */
+	/* color: white; */
+}
+.bg-blog1 {
+	overflow: hidden;
+	background: #8d7f7a;
+	color: white;
+}
+.btn-blog2 {
+	background: transparent;
+	color: black;
+	border: black 1px solid;
+	padding: 4px 6px;
+}
+
+.btn-blog2:hover {
+	/* background: #944c46; */
+	background: linear-gradient(45deg, #944c46, black);
+	/* color: #000; */
+	/* color: white; */
+}
+.bg-blog2 {
+	overflow: hidden;
+	background: #dd6a5f;
+	color: white;
+}
+/* Blog button-3 */
+.btn-blog3 {
+	background: transparent;
+	color: black;
+	border: black 1px solid;
+	padding: 4px 6px;
+}
+
+.btn-blog3:hover {
+	/* background: #47777b; */
+	background: linear-gradient(45deg, black, #47777b);
+	/* color: #000; */
+	/* color: white; */
+}
+.bg-blog3 {
+	overflow: hidden;
+	background: #6bb3b9;
+	color: white;
+}
+
+/* for btn */
+.btn-primary {
+	background: #000;
+	color: white;
+}
+.btn-secondary {
+	/* background: transparent; */
+	color: black;
+	border: 1px black solid;
+	padding: 4px 6px;
+}
+.btn-secondary:hover {
+	/* background: grey; */
+	background: linear-gradient(45deg, black, grey);
+	color: white;
+	/* border: 1px black solid; */
+	z-index: 10;
+}
+.btn-dark {
+	background: transparent;
+	border: 1px white solid;
+	color: white;
+	padding: 8px 6px;
+}
+.btn-dark:hover {
+	/* background: #303237; */
+	background: linear-gradient(45deg, black, #303237);
+
+	/* background: #303237; */
+	color: white;
+	border: none;
+}
+/* ABOUT SOLUTION */
+.btn-light {
+	/* background: transparent; */
+	color: black;
+	border: 1px black solid;
+	padding: 3px 4px;
+}
+.btn-light:hover {
+	/* background-color: #834519; */
+	background: linear-gradient(45deg, black, #834519);
+
+	color: white;
+}
+.bg-primary {
+	background: #ac8365;
+
+	color: white;
+}
+.bg-icons {
+	background: white;
+	color: #000;
+}
+.bg-secondary {
+	background: #85878c;
+
+	color: white;
+}
+.bg-light {
+	background: #c8c8c8;
+
+	color: black;
+}
+.bg-dark {
+	color: white;
+	background: #382019;
+}
+
+/* Flex itemms */
+/* used in icons section  */
+/* used in about section */
+/* used in team in header tag */
+.flex-items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 100%;
+	text-align: center;
+}
+/* Direct div selected by these > (div is a child element of flex-item */
+.flex-items > div {
+	padding: 1rem;
+}
+
+/* From Blog section reverse of */
+.flex-columns.flex-reverse .row {
+	flex-direction: row-reverse;
+}
+
+/* Flex -columns */
+/* used in blog section with only class 
+(.flex-columns .row)
+*/
+/* used in about solution */
+/* used in contact solution */
+.flex-columns .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+/* FLEX USE */
+/* used in contact section*/
+/* used in about solution */
+/* used in blog section with only class 
+(.flex-columns .column)*/
+.flex-columns .column {
+	display: flex;
+	flex-direction: column;
+	/* Take entire height */
+	flex-basis: 100%;
+	/* assign equal height */
+	flex: 1;
+}
+
+/* Fix height of both div */
+/* used in about solution section with same class 
+*/
+/* used in blog section with same class 
+*/
+/* used in contact sction */
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+	height: 100%;
+}
+
+/* used in about solution section with same class 
+*/
+/* used in blog section with same class 
+*/
+
+/* used in contact section */
+.flex-columns img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* used in about solution */
+/* used in contact section */
+.flex-columns .column .column-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 2rem;
+}
+
+.flex-columns h2 {
+	color: black;
+	font-size: 25px;
+	font-weight: 200;
+}
+
+.flex-columns .blogs {
+	color: black;
+}
+.flex-columns .contact {
+	color: #484c53;
+	padding: 20px;
+	font-size: 30px;
+}
+.flex-columns h2 {
+	/* color: #000; */
+	font-size: 30px;
+	font-weight: 200;
+}
+
+.flex-columns h4 {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.flex-columns p {
+	font-size: 14px;
+	margin: 12px 0;
+}
+
+/* Sections */
+/* SECTION 2nd div */
+/* used in cases in header tag */
+/* used in team section in header tag */
+.section-header {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.section-header h2 {
+	margin: 1.2rem 0;
+}
+
+.section-padding {
+	padding: 20px 20px 40px;
+}
+
+/* Flex grid */
+/* used in cases */
+.flex-grid .row {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 0 0.2rem;
+}
+
+/* flex equally divided into 4 section  */
+/* max-width for images looking perfect  */
+.flex-grid .column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}

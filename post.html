@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="utilities.css" />
+
+		<title>Post One</title>
+	</head>
+	<body id="home">
+		<!-- class added -->
+		<header class="hero blog">
+			<div class="navbar top" id="navbar">
+				<h1 class="logo">
+					<span class="text-primary"><i class="fas fa-concierge-bell"></i> Cak</span>ies
+				</h1>
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#cases">Cases</a></li>
+						<li><a href="index.html#blog">Blog</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="content">
+				<h1 class="postfont">Blog</h1>
+			</div>
+		</header>
+		<main>
+			<section class="post">
+				<h2>Blog Post One</h2>
+				<p class="meta"><i class="fas fa-user"></i> Posted by <strong>John Doe </strong>| Jan 06 2000</p>
+				<img src="./pexels-cats-coming-920220.jpg" alt="smile" />
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolore odit alias laboriosam dolorem
+					veritatis ipsum ipsa impedit aspernatur assumenda non magnam quisquam id, eaque accusamus veniam
+					molestiae aliquid vel.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quos quis veniam iste sunt. Aperiam
+					eos nostrum laborum aliquam officiis magnam eum quidem quos. Laboriosam, tenetur accusantium, ullam
+					repellat hic sit fugit commodi possimus dolorum odio alias nam rerum nisi molestias maxime quisquam.
+					Voluptatum unde explicabo, id quo .
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil porro quod ea sequi repudiandae
+					eaque, praesentium eligendi dolorem pariatur laboriosam cupiditate sit modi animi cumque blanditiis
+					placeat harum! Corrupti natus in ullam repellendus voluptas dolor, esse tempore, nihil praesentium
+					aspernatur quo, ipsam similique nam ipsum?
+				</p>
+			</section>
+		</main>
+		<footer class="footer bg-dark">
+			<div class="social">
+				<a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g fa-2x"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+			</div>
+			<p>Copyright &copy; 2021 - Cakies</p>
+		</footer>
+
+		<script>
+			const navbar = document.getElementById('navbar');
+			// const bg=document.querySelector('.navbar.top');
+
+			// We have'nt started scrolling yet
+			let scrolled = false;
+
+			// window.onscroll that is an event
+			window.onscroll = function () {
+				// Check where we are on the page in terms of scrolling in Y axis
+				if (window.pageYOffset > 150) {
+					navbar.classList.remove('top');
+
+					if (!scrolled) {
+						navbar.style.transform = 'translateY(-70px)';
+					}
+					setTimeout(() => {
+						navbar.style.transform = 'translateY(0)';
+
+						// we already scrolled down
+						scrolled = true;
+					}, 200);
+				} else {
+					navbar.classList.add('top');
+					scrolled = false;
+				}
+			};
+		</script>
+	</body>
+</html>
